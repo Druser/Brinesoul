@@ -10,16 +10,6 @@ UCLASS()
 class BRINESOUL_API AItems : public AActor
 {
 	GENERATED_BODY()
-
-		UENUM()
-		enum Category
-	{
-		Weapon     UMETA(DisplayName = "Weapon"),
-		Armor      UMETA(DisplayName = "Armor"),
-		Consumable UMETA(DisplayName = "Consumable"),
-		QuestItem  UMETA(DisplayName = "QuestItem"),
-
-	};
 	
 public:	
 	// Sets default values for this actor's properties
