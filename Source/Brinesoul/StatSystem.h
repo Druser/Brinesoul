@@ -43,13 +43,13 @@ public:
 
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Power)
-		int HP;
+		float HP;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Power)
-		int MaxHP;
+		float MaxHP;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Power)
-		int Stamina;
+		float Stamina;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Power)
-		int MaxStamina;
+		float MaxStamina;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Power)
 		int EquipLoad;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Power)
@@ -60,6 +60,9 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Defences)
 		int MagicDef;
 
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Secondary)
+		int BaseMovementSpeed = 400 + (Agility * 2);
 
 
 
