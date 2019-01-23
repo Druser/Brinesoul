@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
+#include "MyGameInstance.h"
 #include "Items.generated.h"
 
 UCLASS()
@@ -15,10 +16,24 @@ public:
 	// Sets default values for this actor's properties
 	AItems();
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Info)
-		FString Name;
-
-
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Game Item Info")
+		FString ItemName;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Game Item Info")
+		FString ItemDescription;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Game Item Info")
+		int ItemNumber;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Game Item Info")
+		ItemTypeENUM ItemType;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Game Item Info")
+		WeaponSlotENUM WeaponSlot;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Game Item Info")
+		WeaponTypeENUM WeaponType;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Game Item Info")
+		bool Usable;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Game Item Info")
+		bool Stackable;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Game Item Info")
+		int MaxStackable;
 
 
 protected:
